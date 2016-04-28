@@ -1,0 +1,55 @@
+<head>
+  <title>&#128586; babel</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+  
+  <div class="background background{{mode}}"></div>
+
+  <h1>
+    start a conversation by entering text into the box below.
+  </h1>
+  
+  <div class="chat-mode0">
+      <ul>
+        {{#each linear_messages}}
+          <li>
+            {{> message}}
+          </li>
+        {{/each}}
+      </ul>
+  </div>
+
+  <div class="chat-mode1">
+    {{#each crazy_messages}}
+      {{> message}}
+    {{/each}}
+  </div>
+
+  {{> new}}
+  
+<script>
+  $('h1').delay(5000).fadeOut(3000);
+  $('.chat-mode1').delay(5000).fadeIn(3000);
+  $('.chat-mode0').delay(5000).fadeIn(3000);
+</script>
+
+</body>
+
+<template name="message">
+  <div class="message" style="top: {{top}}px; left: {{left}}px;">
+    {{message}}
+  </div>
+</template>
+
+<template name="new">
+ <form>
+    <input type="text" name="message" value="&para;" autofocus>
+    <input type="submit" value="send">
+  </form>
+</template>
+
+

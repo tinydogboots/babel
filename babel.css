@@ -1,0 +1,88 @@
+
+body        { padding: 0px;
+            margin: 0px;
+            font-family: Verdana, sans-serif; 
+            color: #000;
+            overflow-x: hidden;
+}
+
+.background
+            { position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; }
+            
+.background0
+            { background-image: url("background0.gif"); }
+.background1
+            { background-image: url("background1.gif"); }
+
+input[type="text"]    
+            { position: fixed;
+            bottom: 4%;
+            left: 2%;
+            height: 35px;
+            width: 90%; 
+            background-color: #fff; 
+            border: 2px solid #000; 
+            -webkit-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.6);
+            -moz-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.6);
+            box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.6); 
+            font-size: 1.5vw; 
+            padding-left: 10px; 
+            color: #000; }
+            
+input[type="submit"]    
+            { position: fixed;
+            bottom: 4%;
+            left: 94%;
+            height: 40px;
+            width: 4.5%; 
+            background-color: #fff; 
+            border: 2px solid #000; 
+            font-size: 1.5vw; 
+            text-align: center; 
+            color: #000; }
+            
+.chat-mode0
+            { position: absolute;
+            left: 2%;
+            top: 2%;
+            font-size: 2.2vw; 
+            line-height: 2.25vw; 
+            height: 98%;
+            width: 100%;
+            overflow: auto; }
+            
+li          { font-size: 2.2vw;
+            line-height: 2.25vw;
+            font-family: Verdana, sans-serif; }
+            
+ul          { list-style: none; 
+            padding: 0;
+            margin: 0; }
+            
+.chat-mode1
+            { position: absolute;
+            left: 2%;
+            top: 2%;
+            font-size: 2.2vw; 
+            line-height: 2.25vw; }
+
+.chat-mode1 .message
+            { position: absolute; 
+            width: 300px; }
+            
+h1          { position: fixed;
+            top: 15%;
+            left: 2%;
+            width: 30%;
+            text-align: center;
+            font-family: Verdana, sans-serif; 
+            font-size: 2.86vw;
+            line-height: 2.925vw; }
+            
+.chat-mode0, .chat-mode1
+            { display: none; }
